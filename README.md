@@ -1,10 +1,6 @@
 # arlec grid gld130ha RGBWW smartlight esphome
 > [!WARNING]
 > The cool white and warm white channels aren't working.
-> 
-> Are they using PWM instead of the sm2135?
->
-> If you get it working or have any tips please let me know!
 
 1. Install the esphome kickstart firmware using [tuya cloudcutter](https://github.com/tuya-cloudcutter/tuya-cloudcutter).
    - Select 'By firmware version and name'
@@ -78,3 +74,8 @@
 6. Save the config and click Install. Choose manual install the first time and download the UF2 package
 
 7. Flash this to the device via OTA. After reboot it should appear in Home Assistant
+
+## Cool white / Warm white channels
+Aren't working. Maybe they are connected to PWM instead? I tried pins P6, P7, P8 but nothing happened.
+
+Maybe it's related to this? https://github.com/esphome/esphome/pull/6152
