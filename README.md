@@ -77,4 +77,4 @@
 
 6. Save the config and click Install. Choose manual install the first time and download the UF2 package
 
-7. Flash this to the device. After reboot it should appear in Home Assistant
+7. Flash this to the device via OTA. After reboot it should appear in Home Assistant
