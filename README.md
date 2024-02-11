@@ -67,10 +67,6 @@ light:
     color_interlock: true
    ```
 
-   Ref: https://esphome.io/components/output/sm2135
-
-6. Save the config and click Install. Choose manual install the first time and download the UF2 package
+6. Save  config and click Install. Choose manual install the first time and download the UF2 package
 
 7. Flash this to the device via OTA. After reboot it should appear in Home Assistant
-
-Maybe it's related to this? https://github.com/esphome/esphome/pull/6152
