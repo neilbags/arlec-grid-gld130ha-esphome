@@ -32,7 +32,8 @@
 sm2135:
   data_pin: P26
   clock_pin: P24
-  cw_current: 15mA # Not sure what this value should be, testing needed
+  cw_current: 35mA
+  rgb_current: 10mA
 
 output:
   - platform: sm2135
@@ -46,15 +47,12 @@ output:
   - platform: sm2135
     id: output_red
     channel: 2
-    max_power: 0.8
   - platform: sm2135
     id: output_white
     channel: 3
-    max_power: 0.8
   - platform: sm2135
     id: output_warmwhite
     channel: 4
-    max_power: 0.8
 
 light:
   - platform: rgbww
@@ -67,17 +65,6 @@ light:
     cold_white_color_temperature: 6536 K
     warm_white_color_temperature: 2000 K
     color_interlock: true
-   
-   light:
-     - platform: rgbww
-       name: "light1"
-       red: output_red
-       green: output_green
-       blue: output_blue
-       cold_white: output_white
-       warm_white: output_warmwhite
-       cold_white_color_temperature: 6536 K
-       warm_white_color_temperature: 2000 K
    ```
 
    Ref: https://esphome.io/components/output/sm2135
